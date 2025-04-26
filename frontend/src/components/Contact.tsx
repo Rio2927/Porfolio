@@ -27,8 +27,8 @@ const Contact = () => {
     }
 
     const payload = {
-      from: "Your Portfolio <your_verified_sender@example.com>", // Replace with your verified domain sender
-      to: ["rio.oberoi.2704@gmail.com"],
+      from: import.meta.env.VITE_SENDER_NAME, 
+      to: import.meta.env.VITE_CONTACT_EMAIL,
       subject: formData.subject,
       html: `
         <p><strong>From:</strong> ${formData.name}</p>
@@ -38,7 +38,7 @@ const Contact = () => {
     };
 
 
-    fetch("http://localhost:5000/api/contact", {
+    fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
