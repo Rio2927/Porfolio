@@ -75,7 +75,8 @@ const Hero = () => {
               <span className="absolute inset-0 bg-accent translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
             </Button>
             <Button variant="outline" className="border-primary text-foreground border-glow">
-              <a href='#contact'>Contact Me</a>
+              {/* <a href='#contact'>Contact Me</a> */}
+              <a href = '#about'>About</a>
             </Button>
           </div>
           

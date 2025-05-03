@@ -4,6 +4,10 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 
+from dotenv import load_dotenv
+load_dotenv()  # <-- Add this to load variables from .env
+
+
 app = Flask(__name__)
 CORS(app)
 

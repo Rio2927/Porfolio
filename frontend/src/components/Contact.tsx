@@ -37,6 +37,8 @@ const Contact = () => {
       `
     };
 
+    console.log("Payload being sent:", payload);
+    console.log(`API URL => ,${import.meta.env.VITE_API_URL}`);
 
     fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
       method: "POST",
