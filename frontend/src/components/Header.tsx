@@ -83,7 +83,6 @@ const Header = () => {
           {navItems.map((item) => (
             <a 
               key={item.name}
-              href={item.href}
               className="text-foreground text-lg font-medium hover:text-primary transition-colors"
               onClick={() => setIsOpen(false)}
             >
