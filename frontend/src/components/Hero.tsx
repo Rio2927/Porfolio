@@ -43,7 +43,7 @@ const Hero = () => {
               <span className="text-lg md:text-xl font-medium text-foreground/80 block mb-2">
                 Hello, I'm
               </span>
-              <span className="text-gradient">Rohit Oberoiii</span>
+              <span className="text-gradient">Rohit Oberoi</span>
             </h1>
           </div>
           
