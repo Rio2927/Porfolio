@@ -3,7 +3,7 @@ name: Deploy React App to S3 & CloudFront
 on:
   push:
     branches:
-      - main   # ya jis branch se deploy karna hai
+      - master   # ya jis branch se deploy karna hai
 
 jobs:
   deploy:
